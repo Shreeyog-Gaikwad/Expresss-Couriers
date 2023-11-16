@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: montserrat;
+}
+
+nav{
+    position: fixed;
+    background: transparent;
+    height: 80px;
+    width: 100%;
+}
+
+img.logo{
+    line-height: 80px;
+    height: 53px;
+    padding-left: 10px;
+}
+
+label.logo{
+    color: rgb(0, 0, 0);
+    font-family: 'Kalam', cursive;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    padding: 10px 20px;
+    color: #000;
+    background: darkcyan;
+    border-radius: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+a.active,
+a:hover{
+    background: #fff;
+    color: darkcyan;
+    border-radius: 20px;
+    transition:0.5s ease;
+}
+
+section:nth-child(odd){
+    background: #eee;
+}
+
+section.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding-bottom: 70px;
+}
+
+section img{
+    height: 100vh;
+    width: 45vw;
+}
+
+section p{
+    padding-left: 30px;
+    height: 100vh;
+    width: 55vw;
+    font-family: 'Playfair Display', serif;
+}
+
+.hometext{
+    color: transparent;
+    background-image: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -800px 0;
+    animation: backcolor 3s linear forwards;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0;
+    }
+}
+
+.signIn{
+    margin-left: 50px;
+    padding: 20px;
+    width: 200px;
+    background-color: darkcyan;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    transition: 0.5s;
+}
+
+button i.isignIn{
+    padding-right: 10px;
+}
+
+.signIn:hover{
+    background-color: lightskyblue;
+    color: #000;
+}
+
+section.about{
+    min-height: 100vh;
+    color: #000;
+    padding-bottom: 70px;
+}
+
+section h1.abouthead{
+    padding-top:px ;
+}
+
+.aboutele2{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutele1{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.border{
+    margin-top: 30px;
+    background: rgb(237, 237, 98);
+    border-radius: 50px;
+    height: 85vh;
+}
+
+.abouthead{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Playfair Display', serif;
+}
+
+.abouttext{
+    font-size: 20px;
+}
+
+.aboutReadmore{
+    margin-left: 50px;
+    padding: 20px;
+    width: 200px;
+    background-color: darkcyan;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    transition: 0.5s;
+}
+
+button i.iaboutReadmore{
+    padding-right: 10px;
+}
+
+.aboutReadmore:hover{
+    background-color: lightskyblue;
+    color: #000;
+}
+
+.aboutimg{
+    height: 70vh;
+    margin-top: 135px;
+}
+
+section.services{
+    min-height: 100vh;
+    justify-content: center;
+    color: #000;
+    padding-bottom: 70px;
+}
+
+div.serviceHead{
+    font-size: 25px;
+}
+
+h1.serviceHeadin{
+    justify-content: center;
+    padding-top: 90px ;
+    padding-bottom: 20px;
+    padding-left: 44vw;
+    font-family: 'Playfair Display', serif;
+}
+
+div.serviceImg{
+    max-width: 100vw;
+    display: flex; 
+    flex-direction: row;
+}
+
+div.service1{
+    height: 10vh;
+    width: 33vw;
+}
+
+div.service1 img{
+    height: 70vh;
+    width: 70vh;
+}
+
+div.service1 p{
+    height: 30px;
+}
+
+div.service2{
+    height: 10vh;
+    width: 33vw;
+}
+
+div.service2 img{
+    height: 70vh;
+    width: 70vh;
+}
+
+div.service2 p{
+    height: 30px;
+}
+
+div.service3{
+    height: 10vh;
+    width: 33vw;
+}
+
+div.service3 img{
+    height: 70vh;
+    width: 70vh;
+}
+
+div.service3 p{
+    height: 30px;
+}
+
+
+
+section.gallery{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding-bottom: 70px;
+}
+
+section.blogs{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding-bottom: 70px;
+}
+
+section.contact{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding-bottom: 70px;
+}
+
+
+
