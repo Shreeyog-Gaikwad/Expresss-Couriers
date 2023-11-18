@@ -17,9 +17,3 @@ window.onscroll = () =>{
         }
     })
 }
-//color: transparent;
-//background-image: linear-gradient(#000, #000);
-//background-repeat: no-repeat;
-//-webkit-background-clip: text;
-//background-position: -750px 0;
-//animation: backcolor 3s linear infinite;

@@ -305,7 +305,6 @@ section.gallery{
 }
 
 section.contact{
-    position: fixed;
     min-height: 100vh;
 }
 
