@@ -18,6 +18,7 @@ nav{
     background: transparent;
     height: 80px;
     width: 100%;
+    z-index: 2;
 }
 
 img.logo{
@@ -53,6 +54,7 @@ nav ul li a{
     border-radius: 20px;
     font-size: 20px;
     text-transform: capitalize;
+    text-decoration: none;
 }
 
 a.active,
@@ -76,12 +78,12 @@ section.home{
     padding-bottom: 70px;
 }
 
-section img{
+section img.homeImg{
     height: 100vh;
     width: 45vw;
 }
 
-section p{
+section p.hometext{
     padding-left: 30px;
     height: 100vh;
     width: 55vw;
@@ -164,8 +166,12 @@ section h1.abouthead{
     font-family: 'Playfair Display', serif;
 }
 
-.abouttext{
-    font-size: 20px;
+section p.abouttext{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 55vw;
+    font-size: 17.5px;
+    font-family: 'Playfair Display', serif;
 }
 
 .aboutReadmore{
@@ -189,9 +195,10 @@ button i.iaboutReadmore{
     color: #000;
 }
 
-.aboutimg{
-    height: 70vh;
-    margin-top: 135px;
+section img.aboutimg{
+    margin-top: 90px;
+    height: 80vh;
+    width: 35vw;
 }
 
 section.services{
@@ -207,7 +214,7 @@ div.serviceHead{
 
 h1.serviceHeadin{
     justify-content: center;
-    padding-top: 90px ;
+    padding-top: 100px ;
     padding-bottom: 20px;
     padding-left: 44vw;
     font-family: 'Playfair Display', serif;
@@ -217,78 +224,231 @@ div.serviceImg{
     max-width: 100vw;
     display: flex; 
     flex-direction: row;
+    padding-top: 70px;
 }
 
 div.service1{
     height: 10vh;
     width: 33vw;
+    padding-left: 130px;
 }
 
 div.service1 img{
-    height: 70vh;
-    width: 70vh;
+    height: 40vh;
+    width: 40vh;
 }
 
 div.service1 p{
+    width: 376px;
+    font-size: 22px;
     height: 30px;
+    padding-left: 7%;
+    padding-top: 20px;
 }
 
 div.service2{
     height: 10vh;
     width: 33vw;
+    padding-left: 130px;
 }
 
 div.service2 img{
-    height: 70vh;
-    width: 70vh;
+    height: 40vh;
+    width: 40vh;
 }
 
 div.service2 p{
+    width: 376px;
+    font-size: 22px;
     height: 30px;
+    padding-left: 0%;
+    padding-top: 20px;
 }
 
 div.service3{
     height: 10vh;
     width: 33vw;
+    padding-left: 130px;
 }
 
 div.service3 img{
-    height: 70vh;
-    width: 70vh;
+    height: 40vh;
+    width: 40vh;
 }
 
 div.service3 p{
+    width: 376px;
+    font-size: 22px;
     height: 30px;
+    padding-left: 0%;
+    padding-top: 20px;
+    font-weight: 500;
 }
-
-
 
 section.gallery{
-    min-height: 100vh;
-    display: flex;
+    min-height: 90vh;
     align-items: center;
     justify-content: center;
     color: #000;
     padding-bottom: 70px;
 }
 
-section.blogs{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    padding-bottom: 70px;
+.galleryImg{
+    z-index: 1;
+}
+
+.galleryhead{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Playfair Display', serif;
 }
 
 section.contact{
+    position: fixed;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    padding-bottom: 70px;
 }
 
+.contact{
+    position: relative;
+    min-height: 80vh;
+    min-width: 50vh;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding:0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    background-size: cover;
+    border-radius: 20px;
+}
 
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
 
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: darkcyan;
+}
+
+.container .contactInfo .box .text i{
+    padding: 4px;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: darkcyan;
+    border-radius: 20px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 0px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: black;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background:  linear-gradient(-45deg, blue, aqua);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    transition: 1s;
+}

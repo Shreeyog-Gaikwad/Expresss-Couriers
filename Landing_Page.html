@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="Landing_Page.css">
     <title>Landing Page</title>
 </head>
@@ -15,7 +16,6 @@
         <li><a class="navOpt" href="#About">About</a></li>
         <li><a class="navOpt" href="#Services">Services</a></li>
         <li><a class="navOpt" href="#Gallery">Gallery</a></li>
-        <li><a class="navOpt" href="#Blogs">Blogs</a></li>
         <li><a class="navOpt" href="#Contact">Contact</a></li>
         </ul>
     </nav>
@@ -26,11 +26,10 @@
             <br>
             <button inputmode="submit" class="signIn"><i class="fa-solid fa-arrow-right-to-bracket isignIn"></i>Sign In</button>
         </p>
-        <img src="../CODESOFT/Images/SamplePNG1.png" alt="">
+        <img class="homeImg" src="../CODESOFT/Images/SamplePNG1.png" alt="">
     </section>
 
     <section class="about" id="About">
-        
         <div class="aboutele1">
             <div class="aboutele2">
                 <div class="border">
@@ -50,18 +49,17 @@
             </div>
             <img class="aboutimg" src="../CODESOFT/Images/AboutusPNG.png" alt="">
         </div>
-
     </section>
 
     <section class="services" id="Services">
         <div class="serviceHead">
-            <h1 class="serviceHeadin">Our Services</h1>
+            <h1 class="serviceHeadin">Our Services <i class="fa-solid fa-truck-fast"></i> </h1>
         </div>
 
         <div class="serviceImg">
             <div class="service1">
                 <img src="../CODESOFT/Images/ServicesPNG1.png" alt="">
-                <p>Free Home Pickup of the Item</p>
+                <p>Free Pickup from Home</p>
             </div>
             <div class="service2">
                 <img src="../CODESOFT/Images/ServicesPNG2.png" alt="">
@@ -75,13 +73,94 @@
 
     </section>
 
-    <section class="gallery" id="Gallery">Gallery</section>
+    <section class="gallery" id="Gallery">
+        <div id="carouselExampleAutoplaying galleryImg" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../CODESOFT/Images/Gallery1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../CODESOFT/Images/Gallery2.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../CODESOFT/Images/Gallery3.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../CODESOFT/Images/Gallery4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../CODESOFT/Images/Gallery5.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+    </section>
 
-    <section class="blogs" id="Blogs">Blogs</section>
-
-    <section class="contact" id="Contact">Contact</section>
+    <section class="contact" id="Contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Heaven,<br> Block No-123,<br> Earth Land <br> 123456</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>1234567890</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>expressscouriers@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                  <div class="icon"><i class="fa-solid fa-arrow-right"></i></div>
+                  <div class="text">
+                      <h3>Follow Us On</h3>
+                      <p>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                      </p>
+                  </div>
+              </div>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea type="text" name="" required="required"></textarea>
+                        <span>Type your Message....</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/35b645cae8.js" crossorigin="anonymous"></script>
 <script src="Landing_Page.js"></script>
 </html>
