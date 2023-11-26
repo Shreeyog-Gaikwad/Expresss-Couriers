@@ -1,10 +1,3 @@
-/*
-Major Colors -:
-#1e1e1e
-#252526
-#333333
-*/
-
 *{
     background-color: #1e1e1e;
 }
@@ -187,6 +180,8 @@ div.progSkills i:hover{
     transform: scale(1.3);
 }
 
+
+
 div.database{
     padding: 5px;
     background-color: #333333;
@@ -218,120 +213,6 @@ h1.myProjects{
     font-size: 250%;
     margin-left: 43%;
     font-family: "Lucida Handwriting",  cursive;
-}
-
-h1.contactMe{
-    color: #fff;
-    font-size: 250%;
-    margin-left: 43%;
-    font-family: "Lucida Handwriting",  cursive;
-}
-
-
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-   
-}
-
-.container .contactInfo1{
-    margin-left: 300px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.container .contactInfo1 .box{
-    position: relative;
-    padding: 5px 0;
-    display: flex;
-}
-
-.container .contactInfo1 .box .icon{
-    min-width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
-}
-
-.container .contactInfo1 .box .text{
-    display: flex;
-    margin-left: 20px;
-    font-size: 16px;
-    color: #fff;
-    flex-direction: column;
-    font-weight: 300;
-}
-
-.container .contactInfo1 .box .text h3
-{
-    margin-top: 15px;
-    font-size: 30px;
-    color: aqua;
-}
-
-.container .contactInfo1 .box .text p{
-    margin-top: -15px;
-}
-
-.container .contactInfo1 .box .text a{
-    color: #fff;
-    margin-top: -15px;
-}
-
-
-.container .contactInfo2{
-    height: 45vh;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.container .contactInfo2 .box{
-    position: relative;
-    padding: 5px 0;
-    display: flex;
-}
-
-.container .contactInfo2 .box .icon{
-    min-width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
-}
-
-.container .contactInfo2 .box .text{
-    display: flex;
-    margin-left: 20px;
-    font-size: 16px;
-    color: #fff;
-    flex-direction: column;
-    font-weight: 300;
-}
-
-.container .contactInfo2 .box .text h3
-{
-    margin-top: 15px;
-    font-size: 30px;
-    color: aqua;
-}
-
-.container .contactInfo2 .box .text p{
-    margin-top: -15px;
-}
-
-.container .contactInfo2 .box .text a{
-    color: #fff;
-    margin-top: -15px;
 }
 
 div.proj{
@@ -443,6 +324,116 @@ div.proj3{
     transform: scale(1.1);
 }
 
+h1.contactMe{
+    color: #fff;
+    font-size: 250%;
+    margin-left: 43%;
+    font-family: "Lucida Handwriting",  cursive;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container .contactInfo1{
+    margin-left: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo1 .box{
+    position: relative;
+    padding: 5px 0;
+    display: flex;
+}
+
+.container .contactInfo1 .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo1 .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo1 .box .text h3
+{
+    margin-top: 15px;
+    font-size: 30px;
+    color: aqua;
+}
+
+.container .contactInfo1 .box .text p{
+    margin-top: -15px;
+}
+
+.container .contactInfo1 .box .text a{
+    color: #fff;
+    margin-top: -15px;
+}
+
+.container .contactInfo2{
+    height: 45vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo2 .box{
+    position: relative;
+    padding: 5px 0;
+    display: flex;
+}
+
+.container .contactInfo2 .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo2 .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo2 .box .text h3
+{
+    margin-top: 15px;
+    font-size: 30px;
+    color: aqua;
+}
+
+.container .contactInfo2 .box .text p{
+    margin-top: -15px;
+}
+
+.container .contactInfo2 .box .text a{
+    color: #fff;
+    margin-top: -15px;
+}
 
 div.copyright{
     background: #333333;
